@@ -4,10 +4,9 @@ class Formulario extends Component{
     constructor(){
         super();
         this.state={
-            tittle:'',
-            responsible:'',
-            description:'',
-            priority:'low'
+            Product:'',
+            Price:'',
+            Description:'',
 
         };
         this.handleInput=this.handleInput.bind(this);
@@ -27,37 +26,29 @@ class Formulario extends Component{
                     <div className="form-group">
                         <input 
                         type="text" 
-                        name="tittle" 
+                        name="Product" 
                         onChange={this.handleInput}
                         className="form-control" 
-                        placeholder="Title"
+                        placeholder="Producto"
                         />
                     </div>
                     <div className="form-group">
                         <input type="text" 
-                        name="resposible" 
+                        name="Price" 
                         className="form-control" 
-                        placeholder="Responsible"
+                        placeholder="Precio"
                         onChange={this.handleInput}
                         />
                     </div>
                     <div className="form-group">
                         <input type="text" 
-                        name="description" 
+                        name="Description" 
                         className="form-control" 
                         placeholder="Descripcion"
                         onChange={this.handleInput}
                         />
                     </div>
-                    <div className="form-group">
-                        <select name="priority" 
-                        className="form-control"
-                        onChange={this.handleInput}>
-                            <option>low</option>
-                            <option>medium</option>
-                            <option>high</option>
-                        </select>
-                    </div>
+
                                        
                     
                 </form>

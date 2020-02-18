@@ -7,7 +7,7 @@ import Formulario from './FormularioVenta.js';
 
 class App extends Component{
   constructor(){
-    super();//herede todas las funciones de react
+    super();   // Super() para heredar todas las funciones de react
     this.state = {
      todos
   }
@@ -39,7 +39,7 @@ class App extends Component{
       <div className="App">        
         <nav>
           <a href="" className="text-white"> 
-          tasks
+          Productos
           <span className="badge badge-pill badge-light ml-2">
             {this.state.todos.length}
           </span>          

@@ -1,35 +1,28 @@
 {
 "todos":[
     {
-        "tittle":"Task 1",
-        "resposible":"Mark",
-        "descripcion":"lorem ipsum",
-        "priority":"low"
+        "tittle":"Tenis Adidas",
+        "resposible":"$150.000",
+        "descripcion":"Tenis Adidas de color negro"
+        
     },
+
     {
-        "tittle":"Task 2",
-        "resposible":"Ryan",
-        "descripcion":"lorem ipsum 2",
-        "priority":"medium"
+        "tittle":"Tenis Nike",
+        "resposible":"$180.000",
+        "descripcion":"Tenis Nike de color gris"
+        
     },
+
     {
-        "tittle":"Task 3",
-        "resposible":"Mark",
-        "descripcion":"lorem ipsum 3",
-        "priority":"high"
-    },
-    {
-        "tittle":"Task 4",
-        "resposible":"Jose",
-        "descripcion":"lorem ipsum 3",
-        "priority":"high"
-    },
-    {
-        "tittle":"Task 4",
-        "resposible":"Jose",
-        "descripcion":"lorem ipsum 3",
-        "priority":"high"
+        "tittle":"Tenis Rebook",
+        "resposible":"$120.000",
+        "descripcion":"Tenis Rebook de color blanco "
+        
     }
+
+
+
 ]
 
 }

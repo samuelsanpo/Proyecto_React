@@ -4,6 +4,9 @@ import './App.css';
 import Navegacion from './components/Navegacion';
 import { todos } from './ObjetosVenta.json';
 import Formulario from './FormularioVenta.js';
+import Navbar from './components/Navbar';
+
+
 
 class App extends Component{
   constructor(){
@@ -13,29 +16,24 @@ class App extends Component{
   }
   }
   render(){
-     const objst = this.state.todos.map((todos,i) => {
+    const objst = this.state.todos.map((todos,i) => {
       return(
        <div className="col-md-4">
           <div className="card mt-4">
           <div className="card-header">
           <h3>{todos.tittle}</h3>
-          <span className="bagde bagde-pill badge-danger ml-2">
-          {todos.priority}
-          </span>
           </div>
           <div className="card-body">
           <p>{todos.descripcion}</p>
           <p>{todos.resposible}</p>
           </div>
-          
         </div>
-
-
        </div>
       )
     })
+
+
     return(
-      
       <div className="App">        
         <nav>
           <a href="" className="text-white"> 
@@ -47,7 +45,6 @@ class App extends Component{
           <div className="container">
           <Formulario/>
           </div>
-            
           </nav>
           <div className="container">
               <div className="row mt-4">
@@ -58,8 +55,8 @@ class App extends Component{
         <img src={logo} className="App.logo" alt="logo" />
         
       </div>
-          
     );
+
   }
 }
 

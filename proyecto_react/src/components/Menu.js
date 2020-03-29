@@ -1,22 +1,22 @@
 import React from 'react'
 import style from '../cssmodules/menustyle.module.css'
 import Buscador from './Buscador'
+import {Link} from 'react-router-dom'
 
 
 
 function Menu() {
     return (
-        <div className={style.container}>
+        <header className={style.container}>
             <ul>
-  <li><a href="news.asp">Home</a></li>
-  <li><a href="news.asp">News</a></li>
-  <li><a href="contact.asp">Login</a></li>
-  <li><a href="contact.asp">Register</a></li>
-  <li><a href="about.asp">About</a></li>
-  <li><a href="about.asp">Advanced</a></li>
+  <li><Link to="/home">Home</Link></li>  
+  <li><Link to="/login">Login</Link></li>
+  <li><Link href="contact.asp">Register</Link></li>
+  <li><Link href="about.asp">About</Link></li>
+  <li><Link href="about.asp">Advanced</Link></li>
   <Buscador/> 
     </ul>
-        </div>
+        </header>
     )
 }
 export default Menu

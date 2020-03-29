@@ -1,10 +1,11 @@
 import React from 'react'
-
+import Articulo from './Articulos'
 function Home() {
-    const heading={position:'relative',top:'50%'}
+    const heading={position:'absolute',bottom:'50%'}
     return (
-        <div style={heading}>
-            <h1>Hola mundoasldkaslkjadskljadsjklkljsad</h1>
+        <div >
+                     
+                     <Articulo  titulo="juan" precio="1234"  />
         </div>
     )
 }

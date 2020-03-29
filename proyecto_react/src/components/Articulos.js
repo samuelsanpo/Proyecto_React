@@ -4,12 +4,12 @@ import style from '../cssmodules/cardstyle.module.css'
 export default function Articulos(props) {
     return (
         
-            <div className={style.card}>            
-                <div className={style.container}>
+            <div className={style.card}>
+                <div className={style.containerI}>
+                </div>            
+                <div className={style.containerD}>
                     <h4>{props.titulo}</h4>
-                    <p>{props.responsable}</p>
-                    <p>{props.descripcion}</p>
-                    <p>{props.prioridad}</p>
+                    <p>{props.precio}</p>
                     <p>Ver en detalle</p>
                 </div>
             </div>

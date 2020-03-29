@@ -1,6 +1,6 @@
 import React from 'react'
 import style from '../cssmodules/cardstyle.module.css'
-
+import {Link} from 'react-router-dom'
 export default function Articulos(props) {
     return (
         
@@ -10,7 +10,7 @@ export default function Articulos(props) {
                 <div className={style.containerD}>
                     <h4>{props.titulo}</h4>
                     <p>{props.precio}</p>
-                    <p>Ver en detalle</p>
+                    <Link>Ver en detalle</Link>
                 </div>
             </div>
         

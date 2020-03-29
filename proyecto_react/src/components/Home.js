@@ -4,7 +4,9 @@ function Home() {
     const heading={position:'absolute',bottom:'50%'}
     return (
         <div >
-                <Carrusel></Carrusel>     
+                <Carrusel></Carrusel>
+                <Carrusel></Carrusel> 
+                <Carrusel></Carrusel>       
                      
         </div>
     )

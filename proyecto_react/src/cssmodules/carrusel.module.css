@@ -1,0 +1,12 @@
+.container{
+position:relative;
+height:450px;
+width:1810px;
+margin:50px 35px;
+background: transparent;
+
+}
+.container2{
+  position:relative;
+ left:210px
+  }

@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    
+  }
+
+  /* Style the search field */
+input[type=text] {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;    
+    width: 30%;
+    background: #f1f1f1;
+    left:10%;
+  }
+  
+  /* Style the submit button */
+button {
+    position: relative;
+    width: 8%;
+    padding: 10px;
+    background: rgb(30, 34, 37);
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+    left:10%;
+  
+  }
+ 
+
+  
+ button:hover {
+    background: #175180;
+  }
+  

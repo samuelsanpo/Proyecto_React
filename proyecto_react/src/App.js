@@ -1,63 +1,30 @@
 import React,{Component} from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Navegacion from './components/Navegacion';
-import { todos } from './ObjetosVenta.json';
-import Formulario from './FormularioVenta.js';
-import Navbar from './components/Navbar';
+import Menu from './components/Menu';
+import Artculos from './components/Articulos';
+import Home from './components/Home'
+import { render } from 'react-dom';
+import {BrowserRouter,Route} from 'react-router-dom';
+import Login from './components/Login'
 
-
-
-class App extends Component{
-  constructor(){
-    super();   // Super() para heredar todas las funciones de react
-    this.state = {
-     todos
-  }
-  }
+export default class extends Component{   
+  
   render(){
-    const objst = this.state.todos.map((todos,i) => {
-      return(
-       <div className="col-md-4">
-          <div className="card mt-4">
-          <div className="card-header">
-          <h3>{todos.tittle}</h3>
-          </div>
-          <div className="card-body">
-          <p>{todos.descripcion}</p>
-          <p>{todos.resposible}</p>
-          </div>
-        </div>
-       </div>
-      )
-    })
-
-
     return(
-      <div className="App">        
-        <nav>
-          <a href="" className="text-white"> 
-          Productos
-          <span className="badge badge-pill badge-light ml-2">
-            {this.state.todos.length}
-          </span>          
-          </a>
-          <div className="container">
-          <Formulario/>
-          </div>
-          </nav>
-          <div className="container">
-              <div className="row mt-4">
-                {objst}
-              </div>
-          </div>
-                               
-        <img src={logo} className="App.logo" alt="logo" />
+      
+        <BrowserRouter>
+        <React.Fragment>
+          <Route path="/" component={Menu}/>
+          <Route path="/home" component={Home}/>
+          <Route path="/login" component={Login}/>
+          <Route path="/register" />
+          <Route path="/carrito" />
+          </React.Fragment>
+        </BrowserRouter>
         
-      </div>
-    );
-
+      
+    ); 
   }
+
 }
 
-export default App;

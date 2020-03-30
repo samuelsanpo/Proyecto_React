@@ -1,9 +1,7 @@
 import React,{Component} from 'react';
 import './App.css';
 import Menu from './components/Menu';
-import Artculos from './components/Articulos';
-import Home from './components/Home'
-import { render } from 'react-dom';
+import Home from './components/Home';
 import {BrowserRouter,Route} from 'react-router-dom';
 import Login from './components/Login'
 

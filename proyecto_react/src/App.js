@@ -6,7 +6,7 @@ import Home from './components/Home'
 import { render } from 'react-dom';
 import {BrowserRouter,Route} from 'react-router-dom';
 import Login from './components/Login'
-
+import Cart from './components/Cart'
 export default class extends Component{   
   
   render(){
@@ -18,7 +18,7 @@ export default class extends Component{
           <Route path="/home" component={Home}/>
           <Route path="/login" component={Login}/>
           <Route path="/register" />
-          <Route path="/carrito" />
+          <Route path="/cart" component={Cart}/>
           </React.Fragment>
         </BrowserRouter>
         

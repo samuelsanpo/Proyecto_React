@@ -14,7 +14,7 @@ function Menu() {
   <li><Link to="/login">Login</Link></li>
   <li><Link href="contact.asp">Register</Link></li>
   <li><Link href="about.asp">About</Link></li>
-  <li><Link href="about.asp">Advanced</Link></li>
+  <li><Link to="/cart">Carrito</Link></li>
   <Buscador/> 
     </ul>
         </header>

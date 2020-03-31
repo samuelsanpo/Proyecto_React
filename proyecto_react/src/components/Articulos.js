@@ -66,7 +66,7 @@ function Articulo(props)  {
                     </Modal.Body>
                     <Modal.Footer>
                     <button type="button" class="btn btn-primary btn-lg">Buy Now</button>
-                    <button onHide={handleClose} type="button" class="btn btn-secondary btn-lg">Close</button>
+                    <button onClick={handleClose} type="button" class="btn btn-secondary btn-lg">Close</button>
                     </Modal.Footer>
                     </Modal>
                 </div>

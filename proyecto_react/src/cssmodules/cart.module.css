@@ -1,32 +1,30 @@
-
 .todos{
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
     
     }
-    
-
     .card {
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         width: 330px;
         height: 300px;
         background-color: white;
         border-radius: 10px;      
-        margin-right: 10%;
+        margin-right: 5px;
         padding-top: 15px;
 
-    }
+    }    
 
-    .button{
+
+.button{
     text-align: center;
     width: 80%;
-    margin-right: 20%
+    border-radius: 5px;
     
     }
 
     h1{
-    color: black;
+    
     text-decoration: underline;
     
     }
@@ -36,6 +34,7 @@
     }
 
     .buttonf {
+        margin-left: 10%;
         text-align: center;
         margin-top: 5%;
         margin-bottom: 5%;

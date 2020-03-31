@@ -26,14 +26,35 @@ class Formulario extends Component{
         
     }
 
+
+    AñadirProducto(Product,Price, Description) {
+    
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ Product: Product,
+            Price: Price, Description: Description })
+        };
+        fetch('http://localhost:3001/todos', requestOptions)
+            .then(response => response.json())
+            .then(data => this.setState({ postId: data.id }));
+            alert("Prudcto añadido correctamente")
+      }
+      
+
+
+
+
+
+
     render(){
         
         return(
             <div className="card">
                 <div className="card-header">
-                <h1>Agregar productos</h1>
+                <h1 >Agregar productos</h1>
                 </div>
-                <form className="card-body" onSubmit={this.handleSubmit}>
+                <form className="card-body" >
                     <div className="form-group">
                         <input 
                         type="text" 
@@ -62,7 +83,7 @@ class Formulario extends Component{
                         value={this.state.Description}
                         />
                     </div>
-                    <button type="submit" className="boton-guardar">
+                    <button onClick={() => this.AñadirProducto(this.state.Product, this.state.Price, this.state.Description)} className="boton-guardar"> 
                         Guardar Producto
                     </button>
 

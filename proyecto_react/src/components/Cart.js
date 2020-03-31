@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import style from '../cssmodules/cart.css';
+import style from '../cssmodules/cart.module.css';
 
 
 class Login extends Component {

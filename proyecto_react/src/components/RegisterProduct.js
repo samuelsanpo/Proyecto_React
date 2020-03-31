@@ -4,30 +4,38 @@ import FormularioVenta from './FormularioVenta.js';
 import styles from '../cssmodules/registerstyle.module.css'
 
 class RegisterProduct extends Component{
-    constructor(){
-      super();   // Super() para heredar todas las funciones de react
-      this.state = {
-       todos
+  constructor() {
+    super();
+    this.state = {
+        todos: []
     };
-    this.handdleAddTodo = this.handdleAddTodo.bind(this);
-    }
-  
-  handdleAddTodo(todo){
-  
-    this.setState({
-      todos: [...this.state.todos, todo]
-    })
+}
+componentDidMount () {
+fetch ('http://localhost:3001/todos').then(res => res.json()).then(todos => this.setState({todos}))
+}
+
+
+
+removeTodo(id) {
+fetch (`http://localhost:3001/todos/${id}`, {
+  method: 'DELETE'
+})
+.then(res => res.json())
+.then(res => {
+  if (res.success) {
+    let categories = this.state.categories.filter(c => c.id !== id);
+    this.setState({ categories });
+    
   }
-  
-  removeTodo(index){
-    if(window.confirm('Estas seguro que deseas eliminar esto?')){
-      this.setState({
-        todos: this.state.todos.filter((e, i) => {
-            return i !== index
-        })
-      })
-    }
-  }
+});
+}
+
+
+
+
+
+
+
 
     render(){
        const objst = this.state.todos.map((todos,i) => {
@@ -46,9 +54,11 @@ class RegisterProduct extends Component{
             </div>
             <div className="card-footer">
               <button className="btn btn danger"
-              onClick={this.removeTodo.bind(this, i)}>
+              onClick={() => this.removeTodo(todos.id)}>
                 Eliminar
               </button>
+                                    
+                
             </div>
             
           </div>
@@ -62,7 +72,7 @@ class RegisterProduct extends Component{
         
         <div className="App">        
           <nav>
-            <a href="" className="text-white"> 
+            <a href=""> 
             Productos
             <span className="badge badge-pill badge-light ml-2">
               {this.state.todos.length}
@@ -70,7 +80,7 @@ class RegisterProduct extends Component{
             </a>
 
             <div className={styles.container}>
-            <FormularioVenta onAddTodo={this.handdleAddTodo}/>
+            <FormularioVenta />
             </div>
 
             

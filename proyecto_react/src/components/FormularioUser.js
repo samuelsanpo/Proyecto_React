@@ -1,12 +1,13 @@
 import React,{ Component } from 'react';
+import styles from '../cssmodules/registerstyle.module.css'
 
 class Formulario extends Component{
     constructor(){
         super();
         this.state={
-            Product:'',
-            Price:'',
-            Description:'',
+            Name:'',
+            Password:'',
+            Age:'',
 
         };
         this.handleInput = this.handleInput.bind(this);
@@ -31,44 +32,45 @@ class Formulario extends Component{
         return(
             <div className="card">
                 <div className="card-header">
-                <h1>Agregar productos</h1>
+                <h1>Registrar Usuario</h1>
                 </div>
+                <div className={styles.form}>
                 <form className="card-body" onSubmit={this.handleSubmit}>
                     <div className="form-group">
                         <input 
                         type="text" 
-                        name="Product" 
+                        name="Name" 
                         onChange={this.handleInput}
                         value={this.state.Product}
                         className="form-control" 
-                        placeholder="Producto"
+                        placeholder="Nombre Completo"
                         />
                     </div>
                     <div className="form-group">
                         <input type="text" 
-                        name="Price" 
+                        name="Age" 
                         className="form-control" 
-                        placeholder="Precio"
+                        placeholder="Edad"
                         onChange={this.handleInput}
                         value={this.state.Price}
                         />
                     </div>
                     <div className="form-group">
                         <input type="text" 
-                        name="Description" 
+                        name="Password" 
                         className="form-control" 
-                        placeholder="Descripcion"
+                        placeholder="Contraseña"
                         onChange={this.handleInput}
                         value={this.state.Description}
                         />
                     </div>
                     <button type="submit" className="boton-guardar">
-                        Guardar Producto
+                        Registrar
                     </button>
 
                                        
                     
-                </form>
+                </form></div>
             </div>
         )
     }

@@ -3,148 +3,36 @@
 [
     {
         "id":0,
-        "tittle":"Cubo rubik 3x3",
-        "modelo":"P30_Lite",
-        "resposible":"Mark",
-        "descripcion":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea",
-        "precio":"30,999$",
-        "envio":"gratis"
+        "Product":"Cubo rubik 3x3",
+        "Model":"P30_Lite",
+        "Description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea",
+        "Price":"30,999$",
+        "Envio":"gratis"
     },
     {
         "id":1,
-        "tittle":"Mueble Alcoba",
-        "modelo":"MDTP",
-        "resposible":"Ryan",
-        "descripcion":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea 2",
-        "precio":"117,999$",
-        "envio":"gratis"
+        "Product":"Mueble Alcoba",
+        "Model":"MDTP",
+        "Description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea",
+        "Price":"30,999$",
+        "Envio":"gratis"
+       
     },
     {
         "id":2,
-        "tittle":"Disco duro 500gb",
-        "modelo":"Kingston-3030",
-        "resposible":"Mark",
-        "descripcion":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea 4",
-        "precio":"209,999$"
-        ,
-        "envio":"gratis"
+        "Product":"Mueble Alcoba",
+        "Model":"MDTP",
+        "Description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea",
+        "Price":"30,999$",
+        "Envio":"gratis"
     },
     {
         "id":3,
-        "tittle":"Carpa mediana",
-        "modelo":"CRPMDI",
-        "resposible":"Jose",
-        "descripcion":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea 5",
-        "precio":"209,999$",
-        "envio":"4,000$"
-    },
-    {
-        "id":4,
-        "tittle":"Vino de reserva",
-        "modelo":"VNDR",
-        "resposible":"Jose",
-        "descripcion":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea 6",
-        "precio":"209,999$"
-        
-    },
-    {
-        "id":5,
-        "tittle":"Parlantes mini",
-        "modelo":"PMPM30",
-        "resposible":"Mark",
-        "descripcion":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea",
-        "precio":"30,999$",
-        "envio":"4,000$"
-    },
-    {
-        "id":6,
-        "tittle":"Micro sd 100gb",
-        "modelo":"MCSD1GX30",
-        "resposible":"Ryan",
-        "descripcion":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea 2",
-        "precio":"117,999$",
-        "envio":"4,000$"
-    },
-    {
-        "id":7,
-        "tittle":"Task 8",
-        "resposible":"Mark",
-        "descripcion":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea 4",
-        "precio":"209,999$",
-        "envio":"4,000$"
-    },
-    {
-        "id":8,
-        "tittle":"Task 9",
-        "modelo":"MCSD1GX30",
-        "resposible":"Jose",
-        "descripcion":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea 5",
-        "precio":"209,999$",
-        "envio":"4,000$"
-    },
-    {
-        "id":9,
-        "tittle":"Task 10",
-        "modelo":"MCSD1GX30",
-        "resposible":"Jose",
-        "descripcion":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea 6",
-        "precio":"209,999$",
-        "envio":"4,000$"
-    },
-    {
-        "id":10,
-        "tittle":"Task 11",
-        "modelo":"MCSD1GX30",
-        "resposible":"Mark",
-        "descripcion":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea",
-        "precio":"30,999$",
-        "envio":"4,000$"
-    },
-    {
-        "id":11,
-        "tittle":"Task 12",
-        "modelo":"MCSD1GX30",
-        "resposible":"Ryan",
-        "descripcion":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea 2",
-        "precio":"117,999$",
-        "envio":"4,000$"
-    },
-    {
-        "id":12,
-        "tittle":"Task 13",
-        "modelo":"MCSD1GX30",
-        "resposible":"Mark",
-        "descripcion":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea 4",
-        "precio":"209,999$",
-        "envio":"4,000$"
-    },
-    {
-        "id":13,
-        "tittle":"Task 14",
-        "modelo":"MCSD1GX30",
-        "resposible":"Jose",
-        "descripcion":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea 5",
-        "precio":"209,999$",
-        "envio":"4,000$"
-    },
-    {
-        "id":14,
-        "tittle":"Task 15",
-        "modelo":"MCSD1GX30",
-        "resposible":"Jose",
-        "descripcion":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea 6",
-        "precio":"209,999$",
-        "envio":"4,000$"
-    }
-    ,
-    {
-        "id":15,
-        "tittle":"Task 16",
-        "modelo":"MCSD1GX30",
-        "resposible":"Jose",
-        "descripcion":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea 5",
-        "precio":"209,999$",
-        "envio":"4,000$"
+        "Product":"Mini Componente",
+        "Model":"SonyMXB300",
+        "Description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea",
+        "Price":"150,999$",
+        "Envio":"gratis"
 
     }
 ]

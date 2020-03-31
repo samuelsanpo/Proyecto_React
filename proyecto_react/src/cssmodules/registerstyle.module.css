@@ -1,0 +1,39 @@
+body{
+    object-position: center;
+}
+
+.container{
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-left: 0px;
+    position: center;
+    background: transparent;
+    border: solid 3px black;
+    border-radius: 10px;
+    
+}
+
+.form{
+    position: relative;
+    left: 100px;
+
+}
+
+.inputform{
+    padding: 0px;
+    position: relative;
+
+}
+
+.footer{
+    text-align: center;
+    
+}
+
+.boton{
+    width: auto;
+    position: relative;
+    left: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}

@@ -38,15 +38,13 @@ function Articulo(props)  {
                             </Col>
                             <Col xs={8} md={4}>
                                 <Row><h4 className={style.h3}>Precio:</h4></Row>
-                                <Row><h4 className={style.h3}>Modelo:</h4></Row>
-                                <Row><h4 className={style.h3}>Fecha:</h4></Row>
+                                <Row><h4 className={style.h3}>Modelo:</h4></Row>                                
                                 <Row><h4 className={style.h3}>Envio:</h4></Row>
                             </Col>
                             <Col xs={4} md={4}>
-                            <Row><p>{props.precio}</p></Row>
-                            <Row><p>{props.modelo}</p></Row>
-                            <Row><p>{props.responsable}</p></Row>
-                            <Row><p>{props.envio}</p></Row>
+                            <Row><p>{props.Price}</p></Row>
+                            <Row><p>{props.Model}</p></Row>                            
+                            <Row><p>{props.Envio}</p></Row>
                             </Col>
                             
                             

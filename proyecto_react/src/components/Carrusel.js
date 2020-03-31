@@ -11,11 +11,13 @@ class Carrusel extends Component {
                  articulos:todos,                 
                  disp:[4,5,6,7],
                  disp2:[-4,-3,-2,-1],
-                 display:<div className={style.container2}> 
-                        <Articulos  titulo={todos[0].tittle} modelo={todos[0].modelo} responsable={todos[0].resposible} des={todos[0].descripcion} envio={todos[0].envio} precio={todos[0].precio}/>
-                        <Articulos  titulo={todos[1].tittle} modelo={todos[1].modelo} responsable={todos[1].resposible} des={todos[1].descripcion} envio={todos[1].envio} precio={todos[1].precio}/>
-                        <Articulos  titulo={todos[2].tittle} modelo={todos[2].modelo} responsable={todos[2].resposible} des={todos[2].descripcion} envio={todos[2].envio} precio={todos[2].precio}/>
-                        <Articulos  titulo={todos[3].tittle} modelo={todos[3].modelo} responsable={todos[3].resposible} des={todos[3].descripcion} envio={todos[3].envio} precio={todos[3].precio}/>
+                 display:
+                 
+                 <div className={style.container2}> 
+                        <Articulos  titulo={todos[0].Product} Model={todos[0].Model}  des={todos[0].Description} Envio={todos[0].Envio} Price={todos[0].Price}/>
+                        <Articulos  titulo={todos[1].Product} Model={todos[1].Model}  des={todos[1].Description} Envio={todos[1].Envio} Price={todos[1].Price}/>
+                        <Articulos  titulo={todos[2].Product} Model={todos[2].Model}  des={todos[2].Description} Envio={todos[2].Envio} Price={todos[2].Price}/>
+                        <Articulos  titulo={todos[3].Product} Model={todos[3].Model}  des={todos[3].Description} Envio={todos[3].Envio} Price={todos[3].Price}/>
                         </div>  
             }
         }
@@ -28,7 +30,7 @@ class Carrusel extends Component {
         var arr=this.state.articulos.map((producto,index)=>{
             if(producto.id===(this.mod(arrPos[0],tamaño))||producto.id===(this.mod(arrPos[1],tamaño))||producto.id===(this.mod(arrPos[2],tamaño))||producto.id===(this.mod(arrPos[3],tamaño))){
                
-            var a=<Articulos key={index} titulo={producto.tittle}  modelo={producto.modelo} responsable={producto.resposible} des={producto.descripcion} envio={producto.envio} precio={producto.precio}/>
+            var a=<Articulos key={index} titulo={producto.Product}  Model={producto.Model}  des={producto.Description} Envio={producto.Envio} Price={producto.Price}/>
             }
             return a
         })

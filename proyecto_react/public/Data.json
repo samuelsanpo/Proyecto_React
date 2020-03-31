@@ -1,5 +1,5 @@
 {
-  "productos": [
+  "carrito": [
     {
       "id": 0,
       "tittle": "Cubo rubik 3x3",
@@ -64,6 +64,9 @@
       "envio": "gratis"
     }
   ],
+
+
+  
   "clientes": [
     {
       "id": 5,

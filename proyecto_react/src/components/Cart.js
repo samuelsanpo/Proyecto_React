@@ -10,13 +10,13 @@ class Login extends Component {
             };
         }
     componentDidMount () {
-        fetch ('http://localhost:3001/productos').then(res => res.json()).then(todos => this.setState({todos}))
+        fetch ('http://localhost:3001/carrito').then(res => res.json()).then(todos => this.setState({todos}))
     }
     
 
     
     removeProduct(id) {
-        fetch (`http://localhost:3001/productos/${id}`, {
+        fetch (`http://localhost:3001/carrito/${id}`, {
           method: 'DELETE'
         })
         .then(res => res.json())
@@ -33,10 +33,10 @@ class Login extends Component {
 compra(){
     {this.state.todos.map(todo => (
 
-    fetch (`http://localhost:3001/productos/${todo.id}`, {
+    fetch (`http://localhost:3001/carrito/${todo.id}`, {
           method: 'DELETE'
         })
-        .then(res => res.json())
+        .then(res => res.json())    
         .then(res => {
           if (res.success) {
             let categories = this.state.categories.filter(c => c.id !== todo.id);

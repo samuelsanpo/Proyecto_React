@@ -4,7 +4,9 @@
   }
 
   /* Style the search field */
-input[type=text] {
+
+.input[type=text] {
+
     position: relative;
     display: inline-block;
     padding: 10px;
@@ -16,7 +18,8 @@ input[type=text] {
   }
   
   /* Style the submit button */
-button {
+
+.button {
     position: relative;
     width: 8%;
     padding: 10px;
@@ -30,9 +33,3 @@ button {
   
   }
  
-
-  
- button:hover {
-    background: #175180;
-  }
-  

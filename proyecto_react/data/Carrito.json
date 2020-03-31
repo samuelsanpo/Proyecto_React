@@ -1,0 +1,12 @@
+{
+    "compras":
+[
+    {
+        "id":1,
+        "idArticulo":1,
+        "idPersona":1,
+        "Cantidad":3
+        
+    }
+]
+}

@@ -69,20 +69,5 @@
      position: relative;
     left:20px;
   }
-  .buttonBUY{
-    position: relative;
-    width: 500px;
-    height: 50px;
-    padding: 10px;
-    background:teal;
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none; /* Prevent double borders */
-    cursor: pointer;    
-    border-radius: 15px;
-    right:22%;
-     
-    
-   }
+  
   

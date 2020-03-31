@@ -1,7 +1,6 @@
 import React, { useState} from 'react'
 import style from '../cssmodules/cardstyle.module.css'
 import Modal from 'react-bootstrap/Modal'
-import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
@@ -67,7 +66,7 @@ function Articulo(props)  {
                     </Modal.Body>
                     <Modal.Footer>
                     <button type="button" class="btn btn-primary btn-lg">Buy Now</button>
-                    <button onClick={props.onHide} type="button" class="btn btn-secondary btn-lg">Close</button>
+                    <button onHide={handleClose} type="button" class="btn btn-secondary btn-lg">Close</button>
                     </Modal.Footer>
                     </Modal>
                 </div>

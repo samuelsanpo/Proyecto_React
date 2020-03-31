@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import style from '../cssmodules/login.css';
+import {Input} from 'reactstrap';
 
 class Login extends Component {
     render(){
@@ -8,15 +9,19 @@ class Login extends Component {
             <form className={style.form}>
                 <h1>Inicio de sesión</h1>
                 <h2>Bienvenido</h2>
-               
+                <div className={style.info}>
                     <label>Email</label>
-                    <input type="email" placeholder="Email"></input>
-                
-                    <label>Password</label>
-                    <input type="password" placeholder="Password"></input>
-                    
-                    <button >Iniciar sesión</button>
-                    <button >Registrarse</button>
+                    <Input type="email" placeholder="Email"></Input>
+
+                    <label>Contraseña</label>
+                    <Input type="password" placeholder="Contraseña"></Input>
+                    </div>
+                    <div className={style.buttons}>
+                    <button className={style.button} >Iniciar sesión</button>
+                    <button className={style.button}>Registrarse</button>
+                    </div>
+
+
             </form>
         </div>
     );

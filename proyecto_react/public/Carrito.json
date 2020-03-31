@@ -1,0 +1,78 @@
+{
+  "productos": [
+    {
+      "id": 0,
+      "tittle": "Cubo rubik 3x3",
+      "modelo": "P30_Lite",
+      "resposible": "Mark",
+      "descripcion": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea",
+      "precio": "30,999$",
+      "envio": "gratis"
+    },
+    {
+      "id": 1,
+      "tittle": "Mueble Alcoba",
+      "modelo": "MDTP",
+      "resposible": "Ryan",
+      "descripcion": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea 2",
+      "precio": "117,999$",
+      "envio": "gratis"
+    },
+    {
+      "id": 2,
+      "tittle": "Disco duro 500gb",
+      "modelo": "Kingston-3030",
+      "resposible": "Mark",
+      "descripcion": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea 4",
+      "precio": "209,999$",
+      "envio": "gratis"
+    },
+    {
+      "id": 3,
+      "tittle": "Carpa mediana",
+      "modelo": "CRPMDI",
+      "resposible": "Jose",
+      "descripcion": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea 5",
+      "precio": "209,999$",
+      "envio": "4,000$"
+    },
+    {
+      "id": 4,
+      "tittle": "Cubo rubik 3x3",
+      "modelo": "P30_Lite",
+      "resposible": "Mark",
+      "descripcion": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea",
+      "precio": "30,999$",
+      "envio": "gratis"
+    },
+    {
+      "id": 5,
+      "tittle": "Mueble Alcoba",
+      "modelo": "MDTP",
+      "resposible": "Ryan",
+      "descripcion": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea 2",
+      "precio": "117,999$",
+      "envio": "gratis"
+    },
+    {
+      "id": 6,
+      "tittle": "Disco duro 500gb",
+      "modelo": "Kingston-3030",
+      "resposible": "Mark",
+      "descripcion": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea 4",
+      "precio": "209,999$",
+      "envio": "gratis"
+    }
+  ],
+  "clientes": [
+    {
+      "id": 5,
+      "tittle": "Mueble Alcoba",
+      "modelo": "MDTP",
+      "resposible": "Ryan",
+      "descripcion": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea 2",
+      "precio": "117,999$",
+      "envio": "gratis"
+    }
+  ]
+}

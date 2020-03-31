@@ -1,3 +1,5 @@
+import {Link} from 'react-router-dom'
+export default function Articulos(props) {
 import React, { useState} from 'react'
 import style from '../cssmodules/cardstyle.module.css'
 import Modal from 'react-bootstrap/Modal'
@@ -15,6 +17,7 @@ function Articulo(props)  {
         height:'200px',
         
         }
+
     return (
         
             <div className={style.card}>
@@ -75,3 +78,4 @@ function Articulo(props)  {
     );
 }
 export default Articulo
+

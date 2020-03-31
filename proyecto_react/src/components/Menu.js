@@ -10,9 +10,10 @@ function Menu() {
             <ul>
   <li><Link to="/home">Home</Link></li>  
   <li><Link to="/login">Login</Link></li>
-  <li><Link to="/login">Register</Link></li>
-  <li><Link to="/login">About</Link></li>
-  <li><Link to="/login">Advanced</Link></li>
+  <li><Link href="contact.asp">Register</Link></li>
+  <li><Link href="about.asp">About</Link></li>
+  <li><Link to="/cart">Carrito</Link></li>
+
   <Buscador/> 
     </ul>
         </header>

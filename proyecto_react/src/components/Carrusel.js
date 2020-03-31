@@ -60,10 +60,12 @@ class Carrusel extends Component {
             
     render(){
         
+
     return (
         
         <div className={style.container}>
             
+
             <a onClick={()=>this.displayProducts("atras")} className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
             <span className="sr-only">Previous</span>
@@ -72,6 +74,7 @@ class Carrusel extends Component {
             {this.state.display}
              
             <a  onClick={()=>this.displayProducts("adelante")}className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
             <span className="sr-only">Next</span>
             </a>

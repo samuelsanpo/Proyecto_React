@@ -2,10 +2,10 @@ import React from 'react'
 import style from '../cssmodules/buscadorstyle.module.css'
 export default function Buscador() {
     return (
-        <div className={style}>
+        <div >
             <form >
-                <input type="text" placeholder="Search.." name="search"/>
-                <button type="submit">GO</button>
+                <input className={style.input} type="text" placeholder="Search.." name="search"/>
+                <button className={style.button} type="submit">GO</button>
             </form>
         </div>
     )

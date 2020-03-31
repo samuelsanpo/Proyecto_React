@@ -3,116 +3,36 @@
 [
     {
         "id":0,
-        "tittle":"Task 1",
-        "resposible":"Mark",
-        "descripcion":"lorem ipsum",
-        "precio":"low"
+        "Product":"Cubo rubik 3x3",
+        "Model":"P30_Lite",
+        "Description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea",
+        "Price":"30,999$",
+        "Envio":"gratis"
     },
     {
         "id":1,
-        "tittle":"Task 2",
-        "resposible":"Ryan",
-        "descripcion":"lorem ipsum 2",
-        "precio":"medium"
+        "Product":"Mueble Alcoba",
+        "Model":"MDTP",
+        "Description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea",
+        "Price":"30,999$",
+        "Envio":"gratis"
+       
     },
     {
         "id":2,
-        "tittle":"Task 3",
-        "resposible":"Mark",
-        "descripcion":"lorem ipsum 4",
-        "precio":"high"
+        "Product":"Mueble Alcoba",
+        "Model":"MDTP",
+        "Description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea",
+        "Price":"30,999$",
+        "Envio":"gratis"
     },
     {
         "id":3,
-        "tittle":"Task 4",
-        "resposible":"Jose",
-        "descripcion":"lorem ipsum 5",
-        "precio":"high"
-    },
-    {
-        "id":4,
-        "tittle":"Task 5",
-        "resposible":"Jose",
-        "descripcion":"lorem ipsum 6",
-        "precio":"high"
-    },
-    {
-        "id":5,
-        "tittle":"Task 6",
-        "resposible":"Mark",
-        "descripcion":"lorem ipsum",
-        "precio":"low"
-    },
-    {
-        "id":6,
-        "tittle":"Task 7",
-        "resposible":"Ryan",
-        "descripcion":"lorem ipsum 2",
-        "precio":"medium"
-    },
-    {
-        "id":7,
-        "tittle":"Task 8",
-        "resposible":"Mark",
-        "descripcion":"lorem ipsum 4",
-        "precio":"high"
-    },
-    {
-        "id":8,
-        "tittle":"Task 9",
-        "resposible":"Jose",
-        "descripcion":"lorem ipsum 5",
-        "precio":"high"
-    },
-    {
-        "id":9,
-        "tittle":"Task 10",
-        "resposible":"Jose",
-        "descripcion":"lorem ipsum 6",
-        "precio":"high"
-    },
-    {
-        "id":10,
-        "tittle":"Task 11",
-        "resposible":"Mark",
-        "descripcion":"lorem ipsum",
-        "precio":"low"
-    },
-    {
-        "id":11,
-        "tittle":"Task 12",
-        "resposible":"Ryan",
-        "descripcion":"lorem ipsum 2",
-        "precio":"medium"
-    },
-    {
-        "id":12,
-        "tittle":"Task 13",
-        "resposible":"Mark",
-        "descripcion":"lorem ipsum 4",
-        "precio":"high"
-    },
-    {
-        "id":13,
-        "tittle":"Task 14",
-        "resposible":"Jose",
-        "descripcion":"lorem ipsum 5",
-        "precio":"high"
-    },
-    {
-        "id":14,
-        "tittle":"Task 15",
-        "resposible":"Jose",
-        "descripcion":"lorem ipsum 6",
-        "precio":"high"
-    }
-    ,
-    {
-        "id":15,
-        "tittle":"Task 16",
-        "resposible":"Jose",
-        "descripcion":"lorem ipsum 5",
-        "precio":"high"
+        "Product":"Mini Componente",
+        "Model":"SonyMXB300",
+        "Description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea",
+        "Price":"150,999$",
+        "Envio":"gratis"
     }
 ]
 }

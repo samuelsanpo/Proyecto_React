@@ -1,13 +1,13 @@
 import React,{Component} from 'react';
-import { todos } from '../ObjetosVenta.json';
-import FormularioVenta from './FormularioVenta.js';
+import { users } from '../Usuarios.json';
+import FormularioUser from './FormularioUser.js';
 import styles from '../cssmodules/registerstyle.module.css'
 
 class RegisterProduct extends Component{
     constructor(){
       super();   // Super() para heredar todas las funciones de react
       this.state = {
-       todos
+       users
     };
     this.handdleAddTodo = this.handdleAddTodo.bind(this);
     }
@@ -15,14 +15,14 @@ class RegisterProduct extends Component{
   handdleAddTodo(todo){
   
     this.setState({
-      todos: [...this.state.todos, todo]
+      users: [...this.state.users, todo]
     })
   }
   
   removeTodo(index){
     if(window.confirm('Estas seguro que deseas eliminar esto?')){
       this.setState({
-        todos: this.state.todos.filter((e, i) => {
+        users: this.state.users.filter((e, i) => {
             return i !== index
         })
       })
@@ -30,22 +30,21 @@ class RegisterProduct extends Component{
   }
 
     render(){
-       const objst = this.state.todos.map((todos,i) => {
+       const objst = this.state.users.map((users,i) => {
         return(
          <div className="col-md-4">
             <div className="card mt-4">
             <div className="card-header">
-            <h3>{todos.Product}</h3>
+            <h3>{users.Name}</h3>
             <span className="bagde bagde-pill badge-danger ml-2">
-            {todos.priority}
             </span>
             </div>
             <div className="card-body">
-            <p>{todos.Price}</p>
-            <p>{todos.Description}</p>
+            <p>{users.Age}</p>
+            <p>{users.Password}</p>
             </div>
-            <div className="card-footer">
-              <button className="btn btn danger"
+            <div className={styles.footer}>
+              <button className={styles.boton}
               onClick={this.removeTodo.bind(this, i)}>
                 Eliminar
               </button>
@@ -63,14 +62,14 @@ class RegisterProduct extends Component{
         <div className="App">        
           <nav>
             <a href="" className="text-white"> 
-            Productos
+            Usuarios
             <span className="badge badge-pill badge-light ml-2">
-              {this.state.todos.length}
+              {this.state.users.length}
             </span>          
             </a>
 
             <div className={styles.container}>
-            <FormularioVenta onAddTodo={this.handdleAddTodo}/>
+            <FormularioUser onAddTodo={this.handdleAddTodo}/>
             </div>
 
             

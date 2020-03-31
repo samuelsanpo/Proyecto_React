@@ -1,0 +1,30 @@
+{
+    "users":
+[
+    {
+        "id":0,
+        "Name":"Mark",
+        "Age":"25",
+        "Password":"contraseña"
+        
+    },
+    {
+        "id":1,
+        "Name":"Mark2",
+        "Age":"30",
+        "Password":"contraseña"
+    },
+    {
+        "id":2,
+        "Name":"Mark",
+        "Age":"40",
+        "Password":"contraseña"
+    },
+    {
+        "id":3,
+        "Name":"Mark",
+        "Age":"20",
+        "Password":"contraseña"
+    }
+]
+}

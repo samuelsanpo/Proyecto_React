@@ -1,36 +1,44 @@
-import React,{Component} from 'react';
+import React, { Component }  from 'react';
+import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import './App.css';
-import Menu from './components/Menu';
+import firebase from './firebase'
 import Artculos from './components/Articulos';
+
+import { connect } from 'react-redux';
+import * as actionCreators from './store/actions/';
+
 import Home from './components/Home'
-import { render } from 'react-dom';
-import {BrowserRouter,Route} from 'react-router-dom';
-import Login from './components/Login'
+import LogIn from './containers/LogIn/LogIn';
+import SignIn from './containers/SignIn/SignIn';
+import NotFound from './containers/NotFound/NotFound';
 import Register from './components/Register';
 import Cart from './components/Cart'
-import  {Provider} from 'react-redux'
-import store from './redux/store'
+class App extends Component {
 
+  componentDidMount = () => {
+    this.props.onPersistAuthentication();
 
-export default class extends Component{   
-  
-  render(){
-    return(
-        <Provider store={store}>
-        <BrowserRouter>
-        <React.Fragment>
-          <Route path="/" component={Menu}/>
-          <Route path="/home" component={Home}/>
-          <Route path="/login" component={Login}/>
-          <Route path="/register" component={Register}/>
-          <Route path="/cart" component={Cart}/>
-
-          </React.Fragment>
-        </BrowserRouter>
-        </Provider>
-      
-    ); 
   }
 
+  render = () => (
+    <BrowserRouter>
+      <Switch>
+        <Route path = '/' component = {Home} exact/>
+        <Route path = '/login'  component = {LogIn}/>
+        <Route path = '/signin'  component = {SignIn}/>
+        <Route path = '/register'  component = {Register}/>
+        <Route path = '/cart'  component = {Cart}/>
+        
+        <Route component = {NotFound} />
+      </Switch>
+    </BrowserRouter>
+  );
 }
 
+const mapDispatchToProps = dispatch => {
+  return {
+    onPersistAuthentication: () => dispatch( actionCreators.persistAuthentication() )
+  };
+};
+
+export default connect(null, mapDispatchToProps)(App);

@@ -44,7 +44,7 @@ class Home extends Component {
                 <div>
                 <ProductCardforSell/>
                 </div>
-                   <Carrusel></Carrusel>
+                   
 
                </div>
             </div>

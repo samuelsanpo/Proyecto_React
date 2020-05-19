@@ -4,10 +4,11 @@ import Modal from 'react-bootstrap/Modal'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
-import {buyItem} from '../store/actions/actionTypes'
+import {buyItem} from '../store/actions/index'
 import {connect} from 'react-redux'
+import * as actionCreators from '../store/actions';
 
-function Articulo(props)  {
+function Articulos(props)  {
     
     const [show, setShow] = useState(false)    
     const handleClose = () => setShow(false)
@@ -68,7 +69,7 @@ function Articulo(props)  {
                     <Modal.Footer>
                     <button onClick={()=>props.buyItem(props.idItem)} type="button" class="btn btn-primary btn-lg">Buy Now</button>
                     <button onClick={handleClose} type="button" class="btn btn-secondary btn-lg">Close</button>
-                    <p>{props.articulos}</p>
+                     <p>Cantidad: {}</p>
                     </Modal.Footer>
                     </Modal>
                 </div>
@@ -78,9 +79,9 @@ function Articulo(props)  {
     
 
 }
-const mapStateToProps=state =>{
-    return{
-       articulos:state.articulos
+const mapStateToProps = state => {
+    return {
+        
     }
 }
 
@@ -90,5 +91,5 @@ const mapDispatchToProps=dispatch =>
     
 }
 
-export default connect(mapStateToProps,mapDispatchToProps)(Articulo);
+export default connect(mapStateToProps,mapDispatchToProps)(Articulos);
 

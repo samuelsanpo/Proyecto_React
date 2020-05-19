@@ -12,7 +12,6 @@ import Menu from './Menu';
 class Home extends Component {
     state = {
         isUserLoggedIn: this.props.isUserLoggedIn,
-        posts: this.props.posts,
 
     }
 
@@ -21,18 +20,6 @@ class Home extends Component {
             isUserLoggedIn: nextState.isUserLoggedIn
             
         });
-    }
-
-    componentDidMount () {
-        if (this.state.isUserLoggedIn) {
-           // this.props.onFetchPosts();
-        }
-    }
-
-    componentWillUpdate (nextProps, nextState) {
-        if (!this.state.isUserLoggedIn && nextState.isUserLoggedIn) {
-           // this.props.onFetchPosts();
-        }
     }
 
     render () {
@@ -47,8 +34,8 @@ class Home extends Component {
             <div>
                 <Menu></Menu>
                <div>
-               <p>Logged as: {this.props.userLoggedIn.userName}</p>
-               <button onClick={this.props.onLogOut}>Log out</button>
+
+
                    <Carrusel></Carrusel>
                    <Carrusel></Carrusel>
                    <Carrusel></Carrusel>
@@ -64,7 +51,6 @@ class Home extends Component {
                 <h1>Bienvenido a React Sports</h1>
                 <h2>Si ya tienes una cuenta por favor accede</h2>
                 <h2>Si no, por favor registrate</h2>
-                <image src={"../sport.png"} ></image>
                 <div className = "home-page--button-section">
                     <Button   label="Iniciar sesión" linkTo='./login' type='primary'></Button>
                     <Button  label="Registrarse" linkTo='./signin' type='secondary'></Button>
@@ -78,6 +64,7 @@ const mapStateToProps = state => {
     return {
         isUserLoggedIn: state.authenticationStore.isUserLoggedIn,
         userLoggedIn: state.authenticationStore.userLoggedIn,
+        articulos: state.authenticationStore.articulos
 
     }
 }

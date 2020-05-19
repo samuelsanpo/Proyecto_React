@@ -1,6 +1,7 @@
 import * as actionTypes from '../actions/actionTypes';
 import updateObject from '../utility';
 
+
 const initialState = {
     isUserLoggedIn: false,
     userLoggedIn: {
@@ -9,7 +10,8 @@ const initialState = {
         localId: ''
     },
     loadingAuth: false,
-    error: false
+    error: false,
+    articulos: [1,2]
 }
 
 const login = (state, action) => {
@@ -57,6 +59,15 @@ const setError = (state, action) => {
     return updateObject(state, {error: true});
 }
 
+
+const carritoReducer = (state,action) =>{
+     return updateObject(state,{} )     
+        
+       
+}
+
+
+
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case actionTypes.LOGIN: return login(state, action);
@@ -65,6 +76,7 @@ const reducer = (state = initialState, action) => {
         case actionTypes.START_LOADING_AUTH: return startLoading(state, action);
         case actionTypes.END_LOADING_AUTH: return endLoading(state, action);
         case actionTypes.START_ERROR: return setError(state, action);
+        case actionTypes.BUY_ITEM: return carritoReducer(state, action);
         default: return state;
     }
 }

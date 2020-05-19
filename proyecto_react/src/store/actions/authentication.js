@@ -1,7 +1,9 @@
 import * as actionTypes from './actionTypes';
+import {BUY_ITEM} from './actionTypes';
 import axios from '../../instances/axios-authentication';
 
-const API_KEY = 'AIzaSyAW1Q_zgjsL-OPxbiTuNWZkJPlaqb3e8WM';
+const API_KEY = 'AIzaSyBt3YCBg5rzi_SB_5HcjnUaNTMINHQV1PQ';
+
 
 const startAuthLoading = () => {
     return {
@@ -134,3 +136,12 @@ export const logOut = () => {
         type: actionTypes.LOG_OUT
     };
 };
+
+
+export const buyItem= (number=1) =>{
+    return{
+        type:BUY_ITEM,
+        payload:number
+
+    }
+}

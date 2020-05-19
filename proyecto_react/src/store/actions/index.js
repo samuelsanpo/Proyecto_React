@@ -2,6 +2,6 @@ export {
     logIn,
     logOut,
     signIn,
-    persistAuthentication
+    persistAuthentication,
+    buyItem
 } from './authentication';
-export {buyItem} from './carritoActions';

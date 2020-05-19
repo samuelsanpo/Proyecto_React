@@ -10,8 +10,9 @@ import { Provider } from 'react-redux';
 
 import authenticationReducer from './store/reducers/authentication';
 
+
 const rootReducer = combineReducers ({
-    authenticationStore: authenticationReducer,
+    authenticationStore: authenticationReducer
     
 });
 

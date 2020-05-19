@@ -4,7 +4,7 @@ import Buscador from './Buscador'
 import {Link} from 'react-router-dom'
 
 function Menu() {
-    
+
     return (
         <React.Fragment>
         <header className={style.container}>

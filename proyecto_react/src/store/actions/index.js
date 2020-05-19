@@ -4,3 +4,4 @@ export {
     signIn,
     persistAuthentication
 } from './authentication';
+export {buyItem} from './carritoActions';

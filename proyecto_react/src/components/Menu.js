@@ -9,12 +9,12 @@ function Menu() {
         <React.Fragment>
         <header className={style.container}>
             <ul>
-  <li><Link to="/">Home</Link></li>  
-  <li><Link to="/login">Login</Link></li>
-  <li><Link to="/register">Register</Link></li>
+  <li><Link to="/">Inicio</Link></li>  
+  <li><Link to="/register">Administrar productos</Link></li>
   <li><Link to="/cart">Carrito</Link></li>
 
-  <Buscador/> 
+
+
     </ul>
 
         </header>

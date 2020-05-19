@@ -1,6 +1,5 @@
 import React from 'react'
 import style from '../cssmodules/menustyle.module.css'
-import Buscador from './Buscador'
 import {Link} from 'react-router-dom'
 
 function Menu() {
@@ -9,13 +8,11 @@ function Menu() {
         <React.Fragment>
         <header className={style.container}>
             <ul>
-  <li><Link to="/">Home</Link></li>  
-  <li><Link to="/login">Login</Link></li>
-  <li><Link to="/register">Register</Link></li>
-  <li><Link to="/cart">Carrito</Link></li>
-
-  <Buscador/> 
-    </ul>
+            <li><Link to="/">Home</Link></li>  
+            <li><Link to="/login">Logiiiiin</Link></li>
+            <li><Link to="/register">Register</Link></li>
+            <li><Link to="/cart">Carrito</Link></li>
+            </ul>
 
         </header>
         

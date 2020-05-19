@@ -6,8 +6,8 @@ import Carrusel from './Carrusel';
 import * as actionCreators from '../store/actions';
 import LogIn from '../containers/LogIn/LogIn'
 import Button from './Button/Button';
-import Spinner from './Spinner/Spinner';
 import Menu from './Menu';
+import ProductCard from './ProductCard';
 
 class Home extends Component {
     state = {
@@ -49,6 +49,10 @@ class Home extends Component {
                <div>
                <p>Logged as: {this.props.userLoggedIn.userName}</p>
                <button onClick={this.props.onLogOut}>Log out</button>
+               <div>
+                   
+               <ProductCard/>
+               </div>
                    <Carrusel></Carrusel>
                    <Carrusel></Carrusel>
                    <Carrusel></Carrusel>

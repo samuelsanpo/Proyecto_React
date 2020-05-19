@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import  styles from './LogIn.css';
-
 import Spinner from '../../components/Spinner/Spinner';
-
 import * as actionCreators from '../../store/actions/';
 
 class LogIn extends Component {

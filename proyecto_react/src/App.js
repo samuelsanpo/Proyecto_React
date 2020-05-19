@@ -8,14 +8,15 @@ import {BrowserRouter,Route} from 'react-router-dom';
 import Login from './components/Login'
 import Register from './components/Register';
 import Cart from './components/Cart'
-
+import  {Provider} from 'react-redux'
+import store from './redux/store'
 
 
 export default class extends Component{   
   
   render(){
     return(
-      
+        <Provider store={store}>
         <BrowserRouter>
         <React.Fragment>
           <Route path="/" component={Menu}/>
@@ -26,7 +27,7 @@ export default class extends Component{
 
           </React.Fragment>
         </BrowserRouter>
-        
+        </Provider>
       
     ); 
   }

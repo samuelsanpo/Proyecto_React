@@ -1,4 +1,4 @@
-import {BUY_ITEM} from './carritoTypes'
+import {BUY_ITEM} from  '../actions/actionTypes';
 const initialState={
     articulos:[1,2,3,4,5]
 }

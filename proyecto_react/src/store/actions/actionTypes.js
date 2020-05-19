@@ -9,3 +9,4 @@ export const FETCH_POSTS = 'FETCH_POSTS';
 export const START_LOADING_POSTS = 'START_LOADING_POSTS';
 export const END_LOADING_POSTS = 'END_LOADING_POSTS';
 export const START_ERROR = "START ERROR";
+export const BUY_ITEM='BUY_ITEM';

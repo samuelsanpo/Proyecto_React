@@ -1,8 +1,10 @@
 import React, { Component }  from 'react';
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import './App.css';
-import { connect } from 'react-redux';
+import firebase from './firebase'
+import Artculos from './components/Articulos';
 
+import { connect } from 'react-redux';
 import * as actionCreators from './store/actions/';
 
 import Home from './components/Home'

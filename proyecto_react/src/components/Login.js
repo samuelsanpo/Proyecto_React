@@ -8,7 +8,7 @@ class Login extends Component {
         <div  className={style.todo}>
             <form className={style.form}>
                 <h1>Inicio de sesión</h1>
-                <h2>Bienvenido</h2>
+                <h2>Bienvenido a React Store</h2>
                 <div className={style.info}>
                     <label>Email</label>
                     <Input type="email" placeholder="Email"></Input>

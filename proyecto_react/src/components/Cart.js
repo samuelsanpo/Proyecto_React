@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import style from '../cssmodules/cart.module.css';
 import Menu from './Menu';
-
+import ProductCart from './PruductCart';
 
 class Login extends Component {
         constructor() {
@@ -63,25 +63,7 @@ compra(){
               <Menu></Menu>
           <div className ={style.todos}>
             <h1>Tu carrito</h1>
-              {this.state.todos.map(todo => (
-                              
-                <li key={todo.id}>
-      
-                 <div className={style.card}>
-                 <h3>{ todo.tittle }</h3> 
-                 <p>Modelo: {todo.modelo}</p>
-                 <p>Responsable: {todo.resposible}</p>
-                 <p>Precio: {todo.precio}</p>
-                 <p>Envio: {todo.envio}</p>
-                 <button  className={style.button} onClick={() => this.removeProduct(todo.id)} >Eliminar</button>                         
-                 
-                 </div>
-
-                </li>
-              ))
-              
-              }
-
+            <ProductCart></ProductCart>
              </div>
              <span><button className={style.buttonf} onClick={() => this.compra()}>Realizar Compra</button></span>
               

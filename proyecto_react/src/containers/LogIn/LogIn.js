@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import  styles from './LogIn.css';
-
-import Spinner from '../../components/Spinner/Spinner';
-
 import * as actionCreators from '../../store/actions/';
 
 class LogIn extends Component {
@@ -63,7 +60,7 @@ class LogIn extends Component {
         let content = <button  className={styles.loginbutton} onClick = {this.submitLoginForm}>Iniciar sesión</button>;
         
         if(this.props.loadingAuth) {
-            content = <Spinner />
+            content = "Cargando"
         }
 
         return content;

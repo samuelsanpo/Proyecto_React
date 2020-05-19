@@ -2,11 +2,10 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import style from '../cssmodules/Home.css';
 import Carrusel from './Carrusel';
-
+import sport from '../sport2.svg';
 import * as actionCreators from '../store/actions';
 import LogIn from '../containers/LogIn/LogIn'
 import Button from './Button/Button';
-import Spinner from './Spinner/Spinner';
 import Menu from './Menu';
 
 class Home extends Component {
@@ -33,12 +32,14 @@ class Home extends Component {
             
             <div>
                 <Menu></Menu>
-               <div>
+               <div >
+               <h1>React Sports</h1>
+               <h2>Bienvenido, encontrarás los mejores productos deportivos.</h2>
+               <div className={style.cont}>
+               <img src={sport} /></div>
+               <br></br>
+                   <Carrusel></Carrusel>
 
-
-                   <Carrusel></Carrusel>
-                   <Carrusel></Carrusel>
-                   <Carrusel></Carrusel>
                </div>
             </div>
         );
@@ -52,6 +53,8 @@ class Home extends Component {
                 <h2>Si ya tienes una cuenta por favor accede</h2>
                 <h2>Si no, por favor registrate</h2>
                 <div className = "home-page--button-section">
+                <div className={style.conti}>
+               <img src={sport} /></div>
                     <Button   label="Iniciar sesión" linkTo='./login' type='primary'></Button>
                     <Button  label="Registrarse" linkTo='./signin' type='secondary'></Button>
                 </div>

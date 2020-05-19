@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import style from '../cssmodules/Home.css';
 import Carrusel from './Carrusel';
-
+import ProductCard from './ProductCard';
 import * as actionCreators from '../store/actions';
 import LogIn from '../containers/LogIn/LogIn'
 import Button from './Button/Button';
@@ -33,13 +33,12 @@ class Home extends Component {
             
             <div>
                 <Menu></Menu>
-               <div>
-
-
+                <div>
+                <ProductCard/>
+                </div>
+                    <div>
                    <Carrusel></Carrusel>
-                   <Carrusel></Carrusel>
-                   <Carrusel></Carrusel>
-               </div>
+                    </div>
             </div>
         );
     }

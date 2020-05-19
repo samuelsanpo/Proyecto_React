@@ -43,6 +43,8 @@ function useProduct() {
                 <div className="card-body">
                   <p>{products.description}</p>
                   <p>{products.price}</p>
+                  
+                <button type="button" class="btn btn-outline-success" >Comprar</button>
   
                 </div>
               </div>

@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import style from '../cssmodules/Home.css';
 import Carrusel from './Carrusel';
-import ProductCard from './ProductCard';
+import ProductCardforSell from './ProductCardforSell';
 import * as actionCreators from '../store/actions';
 import LogIn from '../containers/LogIn/LogIn'
 import Button from './Button/Button';
 import Spinner from './Spinner/Spinner';
 import Menu from './Menu';
+import firebase from '../firebase';
+
 
 class Home extends Component {
     state = {
@@ -34,7 +36,7 @@ class Home extends Component {
             <div>
                 <Menu></Menu>
                 <div>
-                <ProductCard/>
+                <ProductCardforSell/>
                 </div>
                     <div>
                    <Carrusel></Carrusel>

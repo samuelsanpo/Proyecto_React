@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import style from '../cssmodules/menustyle.module.css'
-import Buscador from './Buscador'
 import {Link} from 'react-router-dom'
 import { connect } from 'react-redux';
 import * as actionCreators from '../store/actions';
@@ -14,9 +13,12 @@ render(){
   <li><Link to="/">Inicio</Link></li>  
   <li><Link to="/register">Administrar productos</Link></li>
   <li><Link to="/cart">Carrito</Link></li>
-  <p>Sesión iniciada como: {this.props.userLoggedIn.userName}</p>
-                <p>{this.props.articulos}</p>
-               <button onClick={this.props.onLogOut}>Cerrar sesión</button>
+ 
+  <div className={style.sesion}>
+  <li className={style.lis}>Usuario:  {this.props.userLoggedIn.userName}   </li>
+  <button className={style.button} onClick={this.props.onLogOut}>Cerrar sesión</button>
+  </div>
+
 
   </ul>
   </header>

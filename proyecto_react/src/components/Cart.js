@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import style from '../cssmodules/cart.module.css';
+import Menu from './Menu';
 
 
 class Login extends Component {
@@ -57,7 +58,9 @@ compra(){
     render () {
     
         return (
+          
             <div className={style.pagina}>
+              <Menu></Menu>
           <div className ={style.todos}>
             <h1>Tu carrito</h1>
               {this.state.todos.map(todo => (

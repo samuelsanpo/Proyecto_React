@@ -1,0 +1,28 @@
+
+
+.loginform {
+    text-align: center;
+    border: 1px solid #ccc;
+    position: relative;
+    width: 40%;
+    height: 80%;
+    padding: 5%;
+    margin-top: 10%;
+    margin-left: 30%;
+    margin-right: 30%;
+    color: white;
+}
+
+.loginbutton {
+    width: 60%;
+    height: 40px;
+border-radius: 10px;
+margin-top: 20px;
+
+}
+
+.input{
+    border-radius: 10px;
+    width: 80%;
+    margin:3px;
+}

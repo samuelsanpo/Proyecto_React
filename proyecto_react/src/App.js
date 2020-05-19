@@ -13,11 +13,11 @@ import SignIn from './containers/SignIn/SignIn';
 import NotFound from './containers/NotFound/NotFound';
 import Register from './components/Register';
 import Cart from './components/Cart'
-
 class App extends Component {
 
   componentDidMount = () => {
     this.props.onPersistAuthentication();
+
   }
 
   render = () => (

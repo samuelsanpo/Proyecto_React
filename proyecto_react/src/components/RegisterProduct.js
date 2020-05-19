@@ -3,7 +3,7 @@ import firebase from '../firebase';
 import RegisterProductForm from './RegisterProductForm.js';
 import styles from '../cssmodules/registerstyle.module.css'
 import Container from 'react-bootstrap/Container'
-
+import ProductCard from './ProductCard';
 
 function useProduct() {
   const [products, setProducts] = useState([])
@@ -39,22 +39,9 @@ const RegisterProduct = () => {
             <RegisterProductForm />
             </div>
 
-            {products.map((products) =>
-            <div className={styles.containercard}>
-       
-            <div className="card" key={products.id}>
-              <div className="card-header">
-              <h2>{products.product}</h2>
-              </div>
-              <div className="card-body">
-                <p>{products.description}</p>
-                <p>{products.price}</p>
-                
-
-              </div>
+            <div>
+            <ProductCard/>
             </div>
-            </div>)}
-
             
         </div>
             

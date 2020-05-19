@@ -2,11 +2,14 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import style from '../cssmodules/Home.css';
 import Carrusel from './Carrusel';
+import ProductCardforSell from './ProductCardforSell';
 import sport from '../sport2.svg';
 import * as actionCreators from '../store/actions';
 import LogIn from '../containers/LogIn/LogIn'
 import Button from './Button/Button';
 import Menu from './Menu';
+import firebase from '../firebase';
+
 
 class Home extends Component {
     state = {
@@ -38,6 +41,9 @@ class Home extends Component {
                <div className={style.cont}>
                <img src={sport} /></div>
                <br></br>
+                <div>
+                <ProductCardforSell/>
+                </div>
                    <Carrusel></Carrusel>
 
                </div>

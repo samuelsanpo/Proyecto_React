@@ -41,10 +41,12 @@ class Home extends Component {
                <div className={style.cont}>
                <img src={sport} /></div>
                <br></br>
+              
                 <div>
                 <ProductCardforSell/>
                 </div>
-                   
+                <h2>Productos más vendidos</h2>
+               <Carrusel></Carrusel>
 
                </div>
             </div>

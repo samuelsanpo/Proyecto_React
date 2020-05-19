@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import './App.css';
+import firebase from './firebase'
 import Menu from './components/Menu';
 import Artculos from './components/Articulos';
 import Home from './components/Home'

@@ -4,7 +4,7 @@ import Modal from 'react-bootstrap/Modal'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
-import {buyItem} from '../redux'
+import {buyItem} from '../store/actions/actionTypes'
 import {connect} from 'react-redux'
 
 function Articulo(props)  {

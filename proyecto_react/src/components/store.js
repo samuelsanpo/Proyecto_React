@@ -40,6 +40,14 @@ switch(action.type){
     default:return state
 }
 
+const buyItem= (number=1) =>{
+    return{
+        type:BUY_ITEM,
+        payload:number
+
+    }
+}
+
 }
 const store=createStore(reducer)
 console.log('Initial state',store.getState())
